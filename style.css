@@ -1,13 +1,3 @@
-body {
-	background-color: #42aaf4;
-	margin-left: 20%;
-	margin-right: 20%;
-	padding: 10px 10px 10px 10px;
-	font-family: serif;
-	font-size: 11px
-	orphans:2;
-	widows:2
-}
 
 
 
@@ -18,8 +8,9 @@ body {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+ margin-left: 20%;
+	margin-right: 20%;
+	padding: 10px 10px 10px 10px;
   overflow: hidden;
   background-color: #333;
 }
