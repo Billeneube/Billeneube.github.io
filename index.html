@@ -1,74 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>Jonas Blanchard's Portfolio</title>
-<div class="main">
-  <p>Current Time:</p>
-  <script>
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
-<body onload="startTime()">
-<div id="txt"></div>
-</div>
 
-	<link rel="stylesheet" href="style.css">
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 </head>
-	<body>
-		<div>
-				<h1>Jonas Blanchard's Portfolio</h1>
-		</div>
-		<div>
-			<h2>Introduction</h2>
-			<p>This website is meant to host my various projects, feel free to look around! </p>
-			<h2>Interviews</h2>
-			<UL>
-				<li><a href="fredswan.html">Fred Swan Interview</a></li>
-				<li><a href="paulrutz.html">Paul Rutz Interview</a></li>
-				<li><a href="tammyhamilton.html">Tammy Hamilton Interview</a></li>
-			</ul>
-			<h2>Projects</h2>
-			<UL>
-				<li><a href="campspec.html">Camp Speculation</a></li>
-				<li><a href="raincloud.html">Rain Cloud</a></li>
-				<li><a href="webscraping.html">Webscraping Documentation</a></li>
-				<li><a href="https://algebragame-ib.github.io/game/">Algebra Game</a></li>
-				<li><a href="https://billeneube.github.io/journal/">Journal</a></li>
+<body>
 
-			</UL>
-			<h2>Ib Works</h2>
-			<UL>
-				<li><a href="ee.html">Extended Essay</a></li>
-				<li><a href="soviet.html">History IA</a></li>
-				<li><a href="math.html">Math IA</a></li>
-				<li><a href="ib/psychology.html">Psychology IA</a></li>
-				<li><a href="ib/tok.html">ToK Essay</a></li>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Interviews</a>
+    <div class="dropdown-content">
+      <a href="fredswan.html">Fred Swan Interview</a>
+      <a href="paulrutz.html">Paul Rutz Interview</a>
+      <a href="tammyhamilton.html">Tammy Hamiltion Interview</a>
+    </div>
+  </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="campspec.html">Camp Speculation</a>
+      <a href="raincloud.html">Rain cloud</a>
+      <a href="webscraping.html">Webscraping Documentation</a>
+	  <a href="https://algebragame-ib.github.io/game/">Algebra Game</a>
+	  <a href="https://billeneube.github.io/journal/">Journal</a>
+    </div>
+  </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">IB</a>
+    <div class="dropdown-content">
+      <a href="ee.html">Extended Essay</a>
+      <a href="soviet.html">History IA</a>
+      <a href="math.html">Math IA</a>
+	  <a href="ib/psychology.html">Psychology IA</a>
+	  <a href="ib/tok.html">ToK Essay</a>
+	  
+    </div>
+  </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Misc</a>
+    <div class="dropdown-content">
+      <a href="about.html">Biography</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  
+</ul>
 
-			</UL>
-			<h2>About Me</h2>
-			<UL>
-				<li><a href="about.html">My Biography - WIP</a></li>
-			</UL>
-			<h2>Contacts</h2>
-			<p> jonasblanchard@gmail.com
-			</p>
-			<p> jonasrblanchard@gmail.com</p>
-			<p>
-			503-347-6959
-			</p>
-		</div>
+<h3>Jonas Blanchard's Portfolio</h3>
+<p>Feel Free to look around!</p>
+
+</body>
+</html>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 	</body>
 </html>
